@@ -77,7 +77,7 @@
   }
   .cta-button {
     display: inline-block;
-    background-color: #0071e3;
+    background-color: #ffa500;
     color: white;
     padding: 14px 32px;
     border-radius: 980px;
@@ -215,7 +215,7 @@
   }
   .project-link {
     display: inline-block;
-    color: #0071e3;
+    color: #ffa500;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
@@ -263,7 +263,7 @@
     min-height: 120px;
   }
   .submit-button {
-    background-color: #0071e3;
+    background-color: #ffa500;
     color: white;
     padding: 14px;
     border: none;
