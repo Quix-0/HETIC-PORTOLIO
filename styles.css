@@ -131,9 +131,13 @@
     flex: 1;
   }
   .about-image img {
-    width: 100%;
+    width: 100%;   
     border-radius: 20px;
     display: block;
+    background: no-repeat url(images/profile.jpeg);
+    background-size: contain;
+    background-position: center;
+  
   }
   .about-text {
     flex: 1;
