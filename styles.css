@@ -76,7 +76,23 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: highlight-sweep 3s ease-in-out infinite;
+    animation: slideInLeft 1s ease-in-out forwards, highlight-sweep 3s ease-in-out infinite 1s;
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  @keyframes slideInLeft {
+    0% {
+      opacity: 0;
+      transform: translateY(300px);
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   
   @keyframes highlight-sweep {
@@ -105,8 +121,9 @@
     border-radius: 980px;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s;
+    transition: transform 0.1s ease-out;
     font-size: 1.05rem;
+    position: relative;
   }
   .cta-button:hover {
     transform: scale(1.05);
@@ -225,6 +242,9 @@
     height: 300px;
     border-radius: 16px;
     overflow: hidden;
+    background: no-repeat url(images/amadal.png);
+    background-size: contain;
+    background-position: center;
   }
   .project-image img {
     width: 100%;
